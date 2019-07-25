@@ -1,6 +1,10 @@
 const CryptoJS = require('crypto-js');
 
+<<<<<<< HEAD
 const main_url = "http://192.168.1.10:8082/";
+=======
+const main_url = "http://192.168.43.59:8082/";
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
 // const php_url = "http://103.29.91.26:8032/marter_hrm/admin/dashboard";
 const remote_url = "http://192.168.43.59/marter_hrm";
 

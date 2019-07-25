@@ -4,11 +4,14 @@ import BenefitWeddingTable from './BenefitWeddingTable';
 import BenefitWeddingAddNew from './BenefitWeddingAddNew';
 import BenefitWeddingView from './BeneffitWeddingView';
 import {main_url} from "../../../utils/CommonFunction";
+
+
 class WeddingBenefitMain extends Component {
     constructor() {
         super();
         this.state = {
             isAddNew: false,
+
             isTable: true,
             isView:false,
             datasource:[],
@@ -37,6 +40,10 @@ class WeddingBenefitMain extends Component {
 
     }
 
+            isTable: true
+        }
+    }
+
     setupForm = () => {
         this.setState({
             isAddNew: true,
@@ -60,6 +67,7 @@ class WeddingBenefitMain extends Component {
       })
   }
 
+
     render() {
         return(
             <div className="wedding-benefit border-bottom white-bg dashboard-header">
@@ -80,6 +88,11 @@ class WeddingBenefitMain extends Component {
                     this.state.isView ? 
                     <BenefitWeddingView data={this.state.data} /> : ''
 
+
+                {
+                    this.state.isTable ?
+                        <BenefitWeddingTable /> :
+                            <BenefitWeddingAddNew/>
                 }
 
             </div>

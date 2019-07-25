@@ -94,8 +94,12 @@ class BenefitWeddingAddNew extends Component {
         var data = {
            user_id:this.state.employee_id,
            designationo:this.state.designation,
+<<<<<<< HEAD
            spouse_name:this.state.spouseName,
            is_alliance_staff:this.state.spouseCompanyOption
+=======
+           spouse_name:this.state.spouseName
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
         }
 
         const formdata = new FormData();
@@ -107,7 +111,11 @@ class BenefitWeddingAddNew extends Component {
         }
 
         formdata.append('wedding_benefit', JSON.stringify(data))
+<<<<<<< HEAD
     
+=======
+        alert(JSON.stringify(data,2,undefined))
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
 
         let status = 0;
         fetch(`${main_url}wedding_benefit/saveWeddingBenefit`, {
@@ -119,11 +127,15 @@ class BenefitWeddingAddNew extends Component {
                 return res.text()
             })
             .then(text => {
+<<<<<<< HEAD
                 if (status === 200) {
                     toast.success(text);
                     this.props.goToTable()
                 
                 }
+=======
+                if (status === 200) toast.success(text);
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
 
                 else toast.error(text);
                 

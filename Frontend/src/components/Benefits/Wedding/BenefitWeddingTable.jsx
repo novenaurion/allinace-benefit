@@ -15,7 +15,11 @@ require('datatables.net-buttons/js/dataTables.buttons.min');
 require('datatables.net-buttons/js/buttons.html5.min');
 
 
+<<<<<<< HEAD
 export default class WeddingBenefitTable extends Component {
+=======
+export default class PatrolRequestByBmTable extends Component {
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
     constructor(props) {
         super(props);
         this.state = {
@@ -95,11 +99,20 @@ export default class WeddingBenefitTable extends Component {
                 if (result.status === 0 || result.status === 4) {
                     obj = {
                         no: i + 1,
+<<<<<<< HEAD
                       
                         employee_name: data[i].fullname,
                         spouseName: data[i].spouse_name,
                         spouseCompanyOption: data[i].is_alliance_staff,
                         attachment: data[i].file_name,
+=======
+                        form_no: data[i].form_no,
+                        employee_name: data[i].employee_name,
+                        designation: data[i].designation,
+                        spouseName: data[i].spouseName,
+                        spouseCompanyOption: data[i].spouseCompanyOption,
+                        attachment: data[i].attachment,
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
                         status: status,
                         action:
                             '<button style="margin-right:10px" class="btn btn-primary btn-sm own-btn-edit" id="toView" ><span id="view" class="hidden" >' + JSON.stringify(result) + '</span>  <i className="fa fa-cogs"></i>&nbsp;View</button>' +
@@ -110,10 +123,19 @@ export default class WeddingBenefitTable extends Component {
                 else {
                     obj = {
                         no: i + 1,
+<<<<<<< HEAD
                         employee_name: data[i].fullname,
                         spouseName: data[i].spouse_name,
                         spouseCompanyOption: data[i].is_alliance_staff,
                         attachment: data[i].file_name,
+=======
+                        form_no: data[i].form_no,
+                        employee_name: data[i].employee_name,
+                        designation: data[i].designation,
+                        spouseName: data[i].spouseName,
+                        spouseCompanyOption: data[i].spouseCompanyOption,
+                        attachment: data[i].attachment,
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
                         status: status,
                         action:
                             '<button style="margin-right:10px" class="btn btn-primary btn-sm own-btn-edit" id="toView" ><span id="view" class="hidden" >' + JSON.stringify(result) + '</span>  <i className="fa fa-cogs"></i>&nbsp;View</button>'
@@ -148,7 +170,12 @@ export default class WeddingBenefitTable extends Component {
                 data: l,
                 columns: [
                     { title: "No", data: "no" },
+<<<<<<< HEAD
                     { title: "Employee Name", data: "employee_name" },
+=======
+                    { title: "Employee Name", data: "employeeName" },
+                    { title: "Designation", data: "designation" },
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
                     { title: "Spouse Name", data: "spouseName" },
                     { title: "Is Spouse From Alliance", data: "spouseCompanyOption" },
                     { title: "Attachement", data: "attachment" },
@@ -171,6 +198,7 @@ export default class WeddingBenefitTable extends Component {
                     'copy', 'csv', 'excel', 'pdf'
                 ],
                 data: l,
+<<<<<<< HEAD
                 columns: [
                     { title: "No", data: "no" },
                     { title: "Employee Name", data: "employee_name" },
@@ -180,6 +208,19 @@ export default class WeddingBenefitTable extends Component {
                     { title: "Status", data: "status" },
                     { title: "Action", data: "action" }
                 ],
+=======
+
+                columns: [
+                    { title: "Employee Name", data: "employeeName" },
+                    { title: "Designation", data: "designation" },
+                    { title: "Spouse Name", data: "spouseName" },
+                    { title: "Is Spouse From Alliance", data: "spouseCompanyOption" },
+                    { title: "Attachment", data: "attachment" },
+                    { title: "Status", data: "status" },
+                    { title: "Action", data: "action" }
+                ],
+
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
             });
         }
     }
@@ -197,5 +238,9 @@ export default class WeddingBenefitTable extends Component {
             </div >
         )
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 4260aa1346491aa16cc44c1087e8037d58fc14bd
