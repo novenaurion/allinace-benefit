@@ -11,7 +11,8 @@ class WeddingBenefitMain extends Component {
             isAddNew: false,
             isTable: true,
             isView:false,
-            datasource:[]
+            datasource:[],
+            
         }
     }
 
@@ -55,7 +56,7 @@ class WeddingBenefitMain extends Component {
           isAddNew:false,
           isTable:false,
           isView:true,
-          data:data
+          datasource:data
       })
   }
 
